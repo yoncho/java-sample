@@ -10,10 +10,8 @@ public class sampleInterfaceGame {
 		abstract void keyW();
 		abstract void keyS();
 		
-		abstract void initBoxPosition();
-		abstract void CreateMap();
+		abstract void ShowMap();
 		abstract boolean CheckPosition(int x, int y);
-		abstract void UpdateMap(int x, int y);
 	}
 	
 	static class MyGame implements ConsoleGame{
@@ -33,12 +31,8 @@ public class sampleInterfaceGame {
 			if(CheckPosition(positionX - 1, positionY))
 			{
 				positionX -= 1;
-				UpdateMap(positionX, positionY);
 			}
-			else
-			{
-				ShowMap();
-			}
+			ShowMap();
 		}
 
 
@@ -48,12 +42,8 @@ public class sampleInterfaceGame {
 			if(CheckPosition(positionX + 1, positionY))
 			{
 				positionX += 1;
-				UpdateMap(positionX, positionY);
 			}
-			else
-			{
-				ShowMap();
-			}
+			ShowMap();
 		}
 
 
@@ -63,12 +53,8 @@ public class sampleInterfaceGame {
 			if(CheckPosition(positionX, positionY - 1))
 			{
 				positionY -= 1;
-				UpdateMap(positionX, positionY);
 			}
-			else
-			{
-				ShowMap();
-			}
+			ShowMap();
 		}
 
 
@@ -78,50 +64,10 @@ public class sampleInterfaceGame {
 			if(CheckPosition(positionX, positionY + 1))
 			{
 				positionY += 1;
-				UpdateMap(positionX, positionY);
 			}
-			else
-			{
-				ShowMap();
-			}
+			ShowMap();
 		}
 		
-
-		@Override
-		public void UpdateMap(int x, int y) {
-			clearConsole();
-			// TODO Auto-generated method stub
-			for(int i = 0 ; i < n; i ++)
-			{
-				for(int j = 0; j < m; j++)
-				{
-					if (j == x && i == y)
-					{
-						System.out.print("■");
-						continue;
-					}
-					
-					if((i == 0 || i == n-1) && (j == 0 || j == m-1))
-					{
-						System.out.print("*");
-					}
-					else if(i == 0 || i == n-1)
-					{
-						System.out.print("*");
-					}
-					else if (j == 0 || j == m-1) {
-						System.out.print("*");
-					}
-					else
-					{
-						System.out.print(" ");
-					}
-					
-					
-				}
-				System.out.print("\n");
-			}
-		}
 		public void ShowMap() {
 			clearConsole();
 			// TODO Auto-generated method stub
@@ -165,18 +111,6 @@ public class sampleInterfaceGame {
 			}
 			return true;
 		}
-		
-		@Override
-		public void CreateMap() {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void initBoxPosition() {
-			// TODO Auto-generated method stub
-			
-		}
-		
 	}
 	
 	static void startGame()
