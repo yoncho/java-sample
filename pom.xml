@@ -6,5 +6,9 @@
   <packaging>pom</packaging>
   <modules>
   	<module>0808-study</module>
+  	<module>0809-study</module>
+  	<module>finalProject</module>
+  	<module>0810-11-study</module>
+  	<module>0809-0811-study</module>
   </modules>
 </project>

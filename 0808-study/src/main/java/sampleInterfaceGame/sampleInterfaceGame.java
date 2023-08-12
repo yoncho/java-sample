@@ -10,7 +10,7 @@ public class sampleInterfaceGame {
 		abstract void keyW();
 		abstract void keyS();
 		
-		abstract void ShowMap();
+		abstract void showMap();
 		abstract boolean CheckPosition(int x, int y);
 	}
 	
@@ -32,7 +32,7 @@ public class sampleInterfaceGame {
 			{
 				positionX -= 1;
 			}
-			ShowMap();
+			showMap();
 		}
 
 
@@ -43,7 +43,7 @@ public class sampleInterfaceGame {
 			{
 				positionX += 1;
 			}
-			ShowMap();
+			showMap();
 		}
 
 
@@ -54,7 +54,7 @@ public class sampleInterfaceGame {
 			{
 				positionY -= 1;
 			}
-			ShowMap();
+			showMap();
 		}
 
 
@@ -65,10 +65,10 @@ public class sampleInterfaceGame {
 			{
 				positionY += 1;
 			}
-			ShowMap();
+			showMap();
 		}
 		
-		public void ShowMap() {
+		public void showMap() {
 			clearConsole();
 			// TODO Auto-generated method stub
 			for(int i = 0 ; i < n; i ++)
@@ -117,7 +117,7 @@ public class sampleInterfaceGame {
 	{
 		Scanner scanner = new Scanner(System.in);
 		MyGame game = new MyGame(10,10);
-		game.ShowMap();
+		game.showMap();
 		while(true)
 		{
 			switch (scanner.next().charAt(0)){
