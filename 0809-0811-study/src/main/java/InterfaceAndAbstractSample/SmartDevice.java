@@ -3,7 +3,7 @@ package InterfaceAndAbstractSample;
 import java.nio.charset.Charset;
 import java.util.Random;
 
-public abstract class ACSmartDevice extends ACDevice implements ILogging{
+public abstract class SmartDevice extends Device implements ILogging, INetworkable{
 	protected String PID;
 	
 	@Override

@@ -1,14 +1,14 @@
 package InterfaceAndAbstractSample;
 
-public class EXNetworkException extends Exception {
+public class NetworkException extends Exception {
 	private static final long serialVersionUID = 1L;
 
-	public EXNetworkException(String message)
+	public NetworkException(String message)
 	{
 		super(message);
 	}
 	
-	public EXNetworkException()
+	public NetworkException()
 	{
 		super("Network Exception :");
 	}

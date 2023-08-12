@@ -1,6 +1,6 @@
 package InterfaceAndAbstractSample;
 
-public enum EWireService {
+public enum WireService {
 	LGUPLUS,
 	SKT,
 	KT

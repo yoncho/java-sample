@@ -1,11 +1,11 @@
 package InterfaceAndAbstractSample;
 
-public class SmartPhone extends ACSmartDevice implements INetworkable {
+public class SmartPhone extends SmartDevice {
 	
 	private boolean hasUSIM;
 	private String phoneNumber;
 	private String userName;
-	private EWireService wireServiceName;
+	private WireService wireServiceName;
 	
 	//network by usim
 	private Network network;
@@ -15,7 +15,7 @@ public class SmartPhone extends ACSmartDevice implements INetworkable {
 	private int topOfAppsStorage;
 	
 
-	public SmartPhone(boolean hasUSIM, String phoneNumber, String userName, EWireService  wireServiceName)
+	public SmartPhone(boolean hasUSIM, String phoneNumber, String userName, WireService  wireServiceName)
 	{
 		this.hasUSIM = hasUSIM;
 		this.phoneNumber = phoneNumber;

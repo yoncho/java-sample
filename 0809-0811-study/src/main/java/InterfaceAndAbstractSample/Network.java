@@ -29,27 +29,27 @@ public class Network {
 		this.url = new StringBuilder(ipAddress).append(":").append(port).toString();
 	}
 	
-	public boolean openChannel(String url) throws EXNetworkException
+	public boolean openChannel(String url) throws NetworkException
 	{
 		// TODO : channel open by url
 		//if channel open success => return true
 		//if channel open failed  => return false
 		if (url == null)
 		{
-			throw new EXNetworkException("Channel Open Failed");
+			throw new NetworkException("Channel Open Failed");
 		}
 		channelInfo = "#CHANNEL INFO";
 		return true;
 	}
 	
-	public boolean closeChannel() throws EXNetworkException
+	public boolean closeChannel() throws NetworkException
 	{
 		// TODO : channel close by channel
 		//if channel close success => return true
 		//if channel close failed  => return false
 		if (channelInfo == null)
 		{
-			throw new EXNetworkException("Channel Not Open");
+			throw new NetworkException("Channel Not Open");
 		}
 		return true;
 	}

@@ -4,7 +4,7 @@ public class PhoneTest {
 
 	public static void main(String[] args) {
 		//boolean hasUSIM, String phoneNumber, String userName, EWireService  wireServiceName
-		SmartPhone phone1 = new SmartPhone(true, "010-9980-9914", "yoncho", EWireService.LGUPLUS);
+		SmartPhone phone1 = new SmartPhone(true, "010-9980-9914", "yoncho", WireService.LGUPLUS);
 		
 		//1. Check Usim
 		phone1.powerOn();
@@ -14,7 +14,7 @@ public class PhoneTest {
 		System.out.println("==================================");
 		phone1.printSmartPhoneInfo();
 		System.out.println("==================================");
-		SmartPhone phone2 = new SmartPhone(true, "010-9980-9914", "yoncho", EWireService.LGUPLUS);
+		SmartPhone phone2 = new SmartPhone(true, "010-9980-9914", "yoncho", WireService.LGUPLUS);
 		
 		//1. Check Usim
 		phone2.powerOn();

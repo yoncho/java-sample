@@ -1,6 +1,6 @@
 package InterfaceAndAbstractSample;
 
-public abstract class ACDevice {
+public abstract class Device {
 	protected boolean power;
 	
 	abstract void powerOn();
