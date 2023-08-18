@@ -10,7 +10,7 @@ public class PhoneTest {
 		phone1.powerOn();
 		phone1.connectNetwork("127.0.0.1", "8888");
 		phone1.disconnectNetwork();
-		
+		                                                                                                                                         
 		System.out.println("==================================");
 		phone1.printSmartPhoneInfo();
 		System.out.println("==================================");
